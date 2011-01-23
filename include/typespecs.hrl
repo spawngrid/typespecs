@@ -3,31 +3,31 @@
 
 -type gen_server_from() :: {pid(), gen_server_unique_tag()}.
 
--type gen_server_init_result(State) ::
-		{ok, State} |
-		{ok, State, timeout()} |
-		{ok, State, hibernate} |
+-type gen_server_init_result() ::
+		{ok, gen_server_state()} |
+		{ok, gen_server_state(), timeout()} |
+		{ok, gen_server_state(), hibernate} |
 		ignore |
 		{stop, any()}.
 
--type gen_server_handle_call_result(State) ::
-		{reply, any(), State} |
-		{reply, any(), State, timeout()} |
-		{noreply, State} |
-		{noreply, State, timeout()} |
-		{stop, any(), any(), State} |
-		{stop, any(), State}.
+-type gen_server_handle_call_result() ::
+		{reply, any(), gen_server_state()} |
+		{reply, any(), gen_server_state(), timeout()} |
+		{noreply, gen_server_state()} |
+		{noreply, gen_server_state(), timeout()} |
+		{stop, any(), any(), gen_server_state()} |
+		{stop, any(), gen_server_state()}.
 
--type gen_server_handle_cast_result(State) ::
-		{noreply, State} |
-		{noreply, State, timeout()} |
-		{stop, any(), State}.
+-type gen_server_handle_cast_result() ::
+		{noreply, gen_server_state()} |
+		{noreply, gen_server_state(), timeout()} |
+		{stop, any(), gen_server_state()}.
 
--type gen_server_handle_info_result(State) ::
-		{noreply, State} |
-		{noreply, State, timeout()} |
-		{stop, any(), State}.
+-type gen_server_handle_info_result() ::
+		{noreply, gen_server_state()} |
+		{noreply, gen_server_state(), timeout()} |
+		{stop, any(), gen_server_state()}.
 
 -type gen_server_terminate_result() :: any().
 
--type gen_server_code_change_result(State) :: {ok, State}.
+-type gen_server_code_change_result() :: {ok, gen_server_state()}.

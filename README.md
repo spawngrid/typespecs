@@ -20,5 +20,9 @@ Example
 -------
 
 <code>
--spec handle_cast(any(), #state{}) -> gen_server_handle_cast_result(#state{}).
+-type gen_server_state() :: #state{}
+</code>
+
+<code>
+-spec handle_cast(any(), gen_server_state()) -> gen_server_handle_cast_result().
 </code>
