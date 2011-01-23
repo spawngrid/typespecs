@@ -12,8 +12,7 @@ Just include typespecs.hrl in your code and you can start using its typespecs.
 If you are using rebar, you can declare typespec as a dependency in rebar.config:
 
 <code>
-{deps, [
-        {typespecs, "0.1", {git, "git://github.com/spawngrid/typespecs.git",
+{deps, [{typespecs, "0.1", {git, "git://github.com/spawngrid/typespecs.git",
                             "HEAD"}}
         ]}.
 </code>
