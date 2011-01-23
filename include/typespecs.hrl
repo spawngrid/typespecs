@@ -18,7 +18,7 @@
 
 -type gen_server_init_result() :: gen_server_init_result(any()).
 
--type gen_server_no_reply() ::
+-type gen_server_noreply() ::
 		{noreply, gen_server_state()} |
 		{noreply, gen_server_state(), timeout()}.
 
@@ -35,7 +35,7 @@
 
 -type gen_server_handle_call_result(Reply, Reason) ::
 		gen_server_reply(Reply) |
-		gen_server_no_reply() |
+		gen_server_noreply() |
 		gen_server_stop(Reply, Reason).
 
 -type gen_server_handle_call_result(Reply) :: gen_server_handle_call_result(Reply, any()).
@@ -43,13 +43,13 @@
 -type gen_server_handle_call_result() :: gen_server_handle_call_result(any(), any()).
 
 -type gen_server_handle_cast_result(Reason) ::
-		gen_server_no_reply() |
+		gen_server_noreply() |
 		gen_server_stop(Reason).
 
 -type gen_server_handle_cast_result() :: gen_server_handle_cast_result(any()).
 
 -type gen_server_handle_info_result(Reason) ::
-		gen_server_no_reply() |
+		gen_server_noreply() |
 		gen_server_stop(Reason).
 
 -type gen_server_handle_info_result() :: gen_server_handle_info_result(any()).
