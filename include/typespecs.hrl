@@ -20,3 +20,5 @@
 						 {noreply, State} |
 						 {noreply, State, timeout()} |
 						 {stop, any(), State}.
+
+-type gen_server_terminate_result() :: any().
