@@ -15,3 +15,8 @@
 						 {noreply, State} |
 						 {noreply, State, timeout()} |
 						 {stop, any(), State}.
+
+-type gen_server_handle_info_result(State) ::
+						 {noreply, State} |
+						 {noreply, State, timeout()} |
+						 {stop, any(), State}.
