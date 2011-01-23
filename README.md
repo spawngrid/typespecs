@@ -13,7 +13,6 @@ If you are using rebar, you can declare typespec as a dependency in rebar.config
 
 <code>
 {deps, [
-        %% ...
         {typespecs, "0.1", {git, "git://github.com/spawngrid/typespecs.git",
                             "HEAD"}}
         ]}.
