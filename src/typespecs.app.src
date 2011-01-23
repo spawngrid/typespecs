@@ -1,0 +1,11 @@
+{application, typespecs,
+ [
+  {description, "Common Erlang Typespecs"},
+  {vsn, "0.1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                 ]},
+  {env, []}
+ ]}.
