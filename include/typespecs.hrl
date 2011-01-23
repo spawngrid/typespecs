@@ -3,6 +3,13 @@
 
 -type gen_server_from() :: {pid(), gen_server_unique_tag()}.
 
+-type gen_server_init_result(State) ::
+		{ok, State} |
+		{ok, State, timeout()} |
+		{ok, State, hibernate} |
+		ignore |
+		{stop, any()}.
+
 -type gen_server_handle_call_result(State) ::
 						 {reply, any(), State} |
 						 {reply, any(), State, timeout()} |
