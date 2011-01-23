@@ -22,3 +22,5 @@
 						 {stop, any(), State}.
 
 -type gen_server_terminate_result() :: any().
+
+-type gen_server_code_change_result(State) :: {ok, State}.
