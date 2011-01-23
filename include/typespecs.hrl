@@ -3,10 +3,10 @@
 
 -type gen_server_from() :: {pid(), gen_server_unique_tag()}.
 
--type gen_server_stateless_stop(Reason) ->
+-type gen_server_stateless_stop(Reason) ::
 		{stop, Reason}.
 
--type gen_server_ok_state() ->
+-type gen_server_ok_state() ::
 		{ok, gen_server_state()} |
 		{ok, gen_server_state(), timeout()} |
 		{ok, gen_server_state(), hibernate}.
