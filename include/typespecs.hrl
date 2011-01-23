@@ -33,6 +33,9 @@
 		{reply, Reply, gen_server_state()} |
 		{reply, Reply, gen_server_state(), timeout()}.
 
+-type gen_server_async_reply(_Reply) ::
+		gen_server_noreply().
+
 -type gen_server_handle_call_result(Reply, Reason) ::
 		gen_server_reply(Reply) |
 		gen_server_noreply() |
