@@ -26,8 +26,8 @@
 		{stop, Reason, gen_server_state()}.
 
 -type gen_server_stop(Reply, Reason) ::
-			{stop, Reason, Reply, gen_server_state()} |
-			gen_server_stop(Reason).
+		{stop, Reason, Reply, gen_server_state()} |
+		gen_server_stop(Reason).
 
 -type gen_server_reply(Reply) ::
 		{reply, Reply, gen_server_state()} |
