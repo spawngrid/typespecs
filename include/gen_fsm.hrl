@@ -1,0 +1,1 @@
+-type gen_fsm_next_event(States) :: {next_state, States, gen_fsm_state()}.
